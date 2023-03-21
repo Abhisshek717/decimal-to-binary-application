@@ -1,7 +1,8 @@
 var display = document.getElementById('display');
 const minInput = document.getElementById('min');
 const maxInput = document.getElementById('max');
-var rangeInput = document.getElementById("myRange");
+var rangeInput = document.getElementById("myRange")
+var decimal = document.getElementById("decimal_display");
 var currentValue = rangeInput.value;
 rangeInput.value = 75;
 
@@ -20,6 +21,7 @@ rangeInput.addEventListener("change", function() {
 
   console.log(convertToBinary(rangeInput.value) );
   display.textContent = convertToBinary(rangeInput.value);
+  decimal_display.textContent = rangeInput.value;
 });
 minInput.addEventListener('change', updateRange);
 maxInput.addEventListener('change', updateRange);
